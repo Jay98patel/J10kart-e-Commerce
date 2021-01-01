@@ -1,1 +1,17 @@
-<p>header works!</p>
+<header class="pl-0">
+    <img class="logo" src="../../../assets/logo.png" alt="j10Kart" srcset="">
+    <nav class="d-flex">
+        <ul class="nav-links">
+             <li><a [routerLink]="['/home']">Store</a></li>
+             <li><a [routerLink]="['/admin/Dashboard']">Admin Dashboard</a></li>
+        </ul>
+        <ul class="nav-links">
+            <li><a [routerLink]="['/orders']">Orders</a></li>
+            <li><a [routerLink]="['/cart']">Cart</a></li>
+       </ul>
+    </nav>
+    <!-- ngif -->
+    <button [routerLink]="['/login']" >Login</button>
+    <button href="javacript:void(0);" >Logout</button>
+    <button [routerLink]="['/signup']" >Create a new account</button>
+</header>
